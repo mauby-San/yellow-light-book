@@ -12,7 +12,7 @@
         <h1>Welcome!</h1>
         <p>Take a look around and leave a contribution.</p>
         <div class="footer" id="myFooter">
-            <p>Copyright &copy; <span id="year"></span> Cooki3z</p>
+            <p>Copyright &copy; <span id="year"></span> Personal Project</p>
         </div>
         <!-- Add your JavaScript file link here -->
         <script src="script.js"></script>
