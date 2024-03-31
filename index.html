@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+ <title>Portfolio Blog</title>
     <html lang="en">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             
-            <!-- Add your CSS file link here -->
+            <!--  CSS file link  -->
             <link rel="stylesheet" type="text/css" href="styles.css">
         </head>
-        <title>Portfolio Blog</title>
+      
         <body>
             <!-- Page content goes here -->
             <h1>Welcome!</h1>
@@ -15,6 +16,17 @@
             <div class="footer" id="myFooter">
                 <p>Copyright &copy; <span id="year"></span> Personal Project</p>
             </div>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#">Create one</a>.</p>
+            </div>
+
             <!-- Add your JavaScript file link here -->
             <script src="script.js"></script>
         </body>
