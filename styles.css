@@ -1,4 +1,13 @@
-    /* CSS for Container */
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 30px;
+    color: #b37c06;
+}
+
+/* CSS for Container */
 .container {
     max-width : 420px;
     background: transparent;
@@ -47,10 +56,10 @@ body {
 .footer {
     position: static;
     left: 0;
-    bottom: 0;
+    bottom: 1;
     width: 100%;
     background-color: #b37c06;
     color: black;
     text-align: center;
-    padding: 5px;
+    padding: 1px;
 }
