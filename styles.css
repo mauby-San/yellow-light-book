@@ -54,12 +54,12 @@ body {
 
     /* CSS for the footer */
 .footer {
-    position: static;
+    position: fixed;
     left: 0;
     bottom: 1;
     width: 100%;
     background-color: #b37c06;
     color: black;
     text-align: center;
-    padding: 1px;
+    padding: 5px;
 }
