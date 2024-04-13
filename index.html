@@ -2,18 +2,6 @@
  <title>Portfolio Blog</title>
     <html lang="en">
         <head>
-            <style> .sidebar {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color: #111;
-                overflow-x: hidden;
-                transition: 0.5s;
-            }
-           </style>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <h1 class="h1">Work in progress</h1>
@@ -25,7 +13,16 @@
             <!-- Page content goes here -->
             <h2 class="h2">Welcome to the blog!</h2>
             <p style="color: #b37c06;">Take a look around, leave a contribution and do not stare at the lights xD</p>
-            
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+            </div>              
             <div class="container">
                 <label for="uname"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
@@ -41,6 +38,16 @@
             </div>
 
             <!--JavaScript here -->
-            <script src="script.js"></script>
+            <script>
+                            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                }
+
+                function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+                }
+            </script>
         </body>
     </html> 
