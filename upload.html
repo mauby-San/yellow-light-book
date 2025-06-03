@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Blog Post</title>
+  <link rel="stylesheet" href="upload_styles.css">
+</head>
+<body>
+  <h1>Create a New Blog Post</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <div>
+      <label for="title">Title:</label><br>
+      <input type="text" id="title" name="title" required><br><br>
+    </div>
+    <div>
+      <label for="content">Content:</label><br>
+      <textarea id="content" name="content" rows="10" cols="50" required></textarea><br><br>
+    </div>
+    <div>
+      <label for="file">Upload File/Picture:</label><br>
+      <input type="file" id="file" name="file"><br><br>
+    </div>
+    <button type="submit" id="submitBtn">Submit Post</button>
+  </form>
+  <script>
+    document.getElementById("submitBtn").addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent actual form submission for now
+      alert("Form submitted!");
+    });
+  </script>
+</body>
+</html>
