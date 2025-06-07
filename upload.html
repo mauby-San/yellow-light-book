@@ -2,30 +2,57 @@
 <html>
 <head>
   <title>Create Blog Post</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body class="upload-page-background">
+<body>
+  <h1 class="h1">Working</h1>
+  <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="about.html">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+      <a href="upload.html">UPLOAD CONTENT</a>
+  </div>
+  <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+  </div>
   <h1>Create a New Blog Post</h1>
-  <form action="/upload" method="post" enctype="multipart/form-data">
-    <div>
-      <label for="title">Title:</label><br>
-      <input type="text" id="title" name="title" required><br><br>
-    </div>
-    <div>
-      <label for="content">Content:</label><br>
-      <textarea id="content" name="content" rows="10" cols="50" required></textarea><br><br>
-    </div>
-    <div>
-      <label for="file">Upload File/Picture:</label><br>
-      <input type="file" id="file" name="file"><br><br>
-    </div>
-    <button type="submit" id="submitBtn">Submit Post</button>
-  </form>
+  <div class="container">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <div>
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+      </div>
+      <div>
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content" rows="10" cols="50" required></textarea><br><br>
+      </div>
+      <div>
+        <label for="file">Upload File/Picture:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+      </div>
+      <button type="submit" id="submitBtn">Submit Post</button>
+    </form>
+  </div>
+  <div class="footer">
+      <p>Yellow Light | JS | Personal Project</p>
+  </div>
   <script>
     document.getElementById("submitBtn").addEventListener("click", function(event) {
       event.preventDefault(); // Prevent actual form submission for now
       alert("Form submitted!");
     });
+
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
   </script>
   <a href="index.html">
       <button type="button">Return to Homepage</button>
