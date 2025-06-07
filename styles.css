@@ -7,6 +7,14 @@
     color: #000080;
     margin-top: 0;
 }
+
+h1 {
+    color: #000080; /* Navy blue */
+    text-align: center; /* Center align */
+    margin-top: 20px; /* Add some top margin */
+    margin-bottom: 20px; /* Add some bottom margin */
+}
+
  /* The sidebar menu */
  .sidebar {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -55,13 +63,24 @@
     width: 100%;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], textarea {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    background: #f1f1f1;
+    border: 1px solid #ccc; /* Slight border to make it look like an input */
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
@@ -84,7 +103,7 @@ body {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-}   
+}
 
     /* CSS for the footer */
 .footer {
