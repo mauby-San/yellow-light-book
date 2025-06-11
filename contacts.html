@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <title>Contacts</title>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <h1 class="h1">Contacts</h1>
+            <!--  CSS file link  -->
+            <link rel="stylesheet" type="text/css" href="styles.css">
+        </head>
+
+        <body>
+            <!-- Page content goes here -->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="about.html">About</a>
+                <a href="sites-of-interest.html">Sites of Interest</a>
+                <a href="projects.html">Projects</a>
+                <a href="contacts.html">Contacts</a>
+                <a href="upload.html">UPLOAD CONTENT</a>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+            </div>
+            <div class="contacts-info-container"><p>Will place a submission form here later for you to leave a message and some contact info</p></div>
+            <div class="footer">
+                <p>Yellow Light | JS | Personal Project</p>
+            </div>
+
+            <!--JavaScript here -->
+            <script>
+                            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                }
+
+                function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+                }
+            </script>
+        </body>
+    </html>
